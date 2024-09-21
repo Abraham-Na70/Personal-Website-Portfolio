@@ -73,9 +73,9 @@ export const NavBar = () => {
             {/* Navbar text section for social icons and connect button */}
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon5} alt="" /></a>
-                <a href="#"><img src={navIcon6} alt="" /></a>
-                <a href="#"><img src={navIcon7} alt="" /></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abrahamnapi5@gmail.com" target="_blank" rel="noopener noreferrer"><img src={navIcon5} alt="Gmail" /></a>
+                <a href="https://www.linkedin.com/in/abraham-napitupulu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><img src={navIcon6} alt="LinkedIn" /></a>
+                <a href="https://www.instagram.com/cheznudz?igsh=MTI5MzN2cWptdG9rZQ==" target="_blank" rel="noopener noreferrer"><img src={navIcon7} alt="instagram" /></a>
               </div>
               {/* HashLink for smooth scrolling to connect section */}
               <HashLink to='#connect'>
