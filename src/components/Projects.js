@@ -13,6 +13,8 @@ import pict1 from "../assets/img/Pict 1.jpeg";
 import pict3 from "../assets/img/pict 3.jpeg";
 import rakit2 from "../assets/img/Rakit 2.jpeg";
 import pict2 from "../assets/img/Pict 2.jpeg";
+import RoboticProgramming from "../assets/img/Robotic Programming.jpeg";
+import todolistapp from "../assets/img/todolistapp.jpeg";
 
 // Import background image for the section
 import colorSharp2 from "../assets/img/colorsharp2.png";
@@ -35,23 +37,23 @@ export const Projects = () => {
     },
     {
       title: "Game Development",
-      description: "Ping-Pong game in C/C++",
+      description: "Ping-Pong game in C",
       imgUrl: projImg2,
     },
     {
-      title: "Coding",
-      description: "Any other projects",
+      title: "OOP",
+      description: "Object-Oriented Programming",
       imgUrl: projImg3,
     },
     {
-      title: "",
-      description: "",
-      imgUrl: stock1,
+      title: "To-do list app",
+      description: "Utility Program",
+      imgUrl: todolistapp,
     },
     {
-      title: "",
-      description: "",
-      imgUrl: stock1,
+      title: "Robotic Programming",
+      description: "switching LEDs in Arduino",
+      imgUrl: RoboticProgramming,
     },
     {
       title: "",
