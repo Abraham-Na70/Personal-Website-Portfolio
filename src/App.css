@@ -485,6 +485,111 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+.proj-imgbx-alt {
+  position: relative;
+  border-radius: 40px; /* Different border radius */
+  overflow: hidden;
+  margin-bottom: 24px;
+  
+}
+.proj-imgbx-alt::before {
+  content: "";
+  background: linear-gradient(90.21deg, #3c6e8e -5.91%, #1c3e56 111.58%, #0d2b3e 120.48%);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx-alt:hover::before {
+  height: 100%;
+}
+.proj-txtx-alt {
+  position: absolute;
+  text-align: center;
+  top: 65%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx-alt:hover .proj-txtx-alt {
+  top: 50%; 
+  opacity: 1;
+}
+.proj-txtx-alt h4 {
+  font-size: 30px; /* Different font size */
+  font-weight: 700; /* Different font weight */
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx-alt span {
+  font-style: italic;
+  font-weight: 400; /* Different font weight */
+  font-size: 15px; /* Different font size */
+  letter-spacing: 0.8px;
+}
+
+
+.proj-imgbx-alt2 {
+  position: relative;
+  border-radius: 40px; /* Different border radius */
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.proj-imgbx-alt2::before {
+  content: "";
+  background: linear-gradient(90.21deg, #3c6e8e -5.91%, #1c3e56 111.58%, #0d2b3e 120.48%);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx-alt2:hover::before {
+  height: 100%;
+}
+.proj-txtx-alt2 {
+  position: absolute;
+  text-align: center;
+  top: 65%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx-alt2:hover .proj-txtx-alt {
+  top: 50%; 
+  opacity: 1;
+}
+.proj-txtx-alt2 h4 {
+  font-size: 30px; /* Different font size */
+  font-weight: 700; /* Different font weight */
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx-alt2 span {
+  font-style: italic;
+  font-weight: 400; /* Different font weight */
+  font-size: 15px; /* Different font size */
+  letter-spacing: 0.8px;
+}
+.proj-explanation {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
 .background-image-right {
   top: 20%;
   position: absolute;

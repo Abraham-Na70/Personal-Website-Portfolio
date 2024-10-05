@@ -9,6 +9,10 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import stock1 from "../assets/img/stock1.jpg";
+import pict1 from "../assets/img/Pict 1.jpeg";
+import pict3 from "../assets/img/pict 3.jpeg";
+import rakit2 from "../assets/img/Rakit 2.jpeg";
+import pict2 from "../assets/img/Pict 2.jpeg";
 
 // Import background image for the section
 import colorSharp2 from "../assets/img/colorsharp2.png";
@@ -71,15 +75,15 @@ export const Projects = () => {
                 {/* Tab container for project categories */}
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    {/* Tab navigation items */}
+                    {/* Tab nav */}
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Experiences</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Certifications</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -99,10 +103,54 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>LKMM DLL.</p>
+                      <Row className="justify-content-center">
+                        {/* Apply a different layout for the second tab */}
+                        <Col md={8} className="proj-imgbx-alt">
+                          <div className="proj-imgbx-alt">
+                            <img src={pict1} alt="robotik 1" />
+                            <div className="proj-txtx-alt">
+                              <h4>Community Service</h4>
+                              <span>analog robotics extracurricular instructor, Klampis Ngasem 1 public elementary school .</span>
+                            </div>
+                          </div>
+                          <div className="proj-explanation">
+                            <p>In this community service, every friday for one year, I had the opportunity to teach analog robotics to primary school students at SDN klampis Ngasem 1,ranging from 4th grade to 6th grade. The aim was to engage students in hands-on learning and education to enhance the kids understanding of technology and problem-solving around robotics through theoritical explanations and practical applications </p>
+                          </div>
+                        </Col>
+                      </Row>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                      <Row className="justify-content-between align-items-center">
+                      {/* Left */}
+                        <Col md={4} className="proj-imgbx-alt2">
+                          <div className="proj-imgbx-alt2">
+                            <img src={pict3} alt="robotik 2" />
+                          </div>
+                        </Col>    
+                      {/* Center */}
+                        <Col md={4} className="proj-imgbx-alt2">
+                          <div className="proj-imgbx-alt2">
+                            <img src={rakit2} alt="robotik 2" />
+                          </div>
+                        </Col>
+    
+                      {/* Right */}
+                        <Col md={4} className="proj-imgbx-alt2">
+                          <div className="proj-imgbx-alt2">
+                            <img src={pict2} alt="robotik 2" />
+                          </div>
+                        </Col>
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Intern at SHLV</p>
+                      <Row>
+                        {/* Add ProjectCard instances for the third tab */}
+                        <ProjectCard
+                          title="Intern at SHLV"
+                          description="Details about my internship at SHLV."
+                          imgUrl={stock1}
+                        />
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

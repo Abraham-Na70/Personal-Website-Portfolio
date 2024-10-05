@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 // Import images and icons used in the Navbar
 import logo2 from '../assets/img/logo2.png';
-import navIcon5 from '../assets/img/nav-icon5.png';
+import navIcon5 from '../assets/img/github.svg';
 import navIcon6 from '../assets/img/nav-icon6.png';
 import navIcon7 from '../assets/img/nav-icon7.png';
 
@@ -73,7 +73,7 @@ export const NavBar = () => {
             {/* Navbar text section for social icons and connect button */}
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abrahamnapi5@gmail.com" target="_blank" rel="noopener noreferrer"><img src={navIcon5} alt="Gmail" /></a>
+                <a href="https://github.com/Abraham-Na70" target="_blank" rel="noopener noreferrer"><img src={navIcon5} alt="Github" /></a>
                 <a href="https://www.linkedin.com/in/abraham-napitupulu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><img src={navIcon6} alt="LinkedIn" /></a>
                 <a href="https://www.instagram.com/cheznudz?igsh=MTI5MzN2cWptdG9rZQ==" target="_blank" rel="noopener noreferrer"><img src={navIcon7} alt="instagram" /></a>
               </div>
