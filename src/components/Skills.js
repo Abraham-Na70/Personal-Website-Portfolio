@@ -62,11 +62,11 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={skillbrand} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>Implementation</h5>
                             </div>
                             <div className="item">
                                 <img src={skilllogo} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>Assembling</h5>
                             </div>
                             <div className="item">
                                 <img src={skillengineering} alt="Image" />

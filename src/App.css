@@ -443,10 +443,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
+  width: 300px; /* Fixed width */
+  height: 200px; /* Fixed height */
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
+
+.proj-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits inside the container without distortion */
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #4d97b4 -5.91%, #2d5e72 111.58%, #1d3755 120.48%);
@@ -456,6 +465,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
+
 .proj-imgbx:hover::before {
   height: 100%;
 }
@@ -531,12 +541,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 
-
 .proj-imgbx-alt2 {
   position: relative;
+  width: 300px;
+  height: 200px;
   border-radius: 40px; /* Different border radius */
   overflow: hidden;
   margin-bottom: 24px;
+}.proj-imgbx-alt2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .proj-imgbx-alt2::before {
   content: "";
@@ -564,6 +579,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 50%; 
   opacity: 1;
 }
+
 .proj-txtx-alt2 h4 {
   font-size: 30px; /* Different font size */
   font-weight: 700; /* Different font weight */
@@ -576,6 +592,97 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px; /* Different font size */
   letter-spacing: 0.8px;
 }
+/* Container adjusts to the image's aspect ratio */
+.proj-imgbx-alt3 {
+  position: relative;
+  width: 100%; /* Full width to ensure alignment */
+  max-width: 210mm; /* Adjust for A4 width */
+  margin: 0 auto; /* Center align */
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image that adjusts based on orientation */
+.proj-imgbx-alt3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fits inside the container without distortion */
+}
+
+/* Landscape adjustment */
+.proj-imgbx-alt3.landscape img {
+  object-fit: contain;
+}
+
+/* Portrait adjustment */
+.proj-imgbx-alt3.portrait img {
+  object-fit: contain;
+}
+
+/* Hover effect for background gradient */
+.proj-imgbx-alt3::before {
+  content: "";
+  background: linear-gradient(90.21deg, #4d97b4 -5.91%, #2d5e72 111.58%, #1d3755 120.48%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: height 0.4s ease-in-out;
+}
+
+/* Expand gradient on hover */
+.proj-imgbx-alt3:hover::before {
+  height: 100%;
+}
+
+/* Text box overlay inside the project box */
+.proj-txtx-alt3 {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+/* Text appears on hover */
+.proj-imgbx-alt3:hover .proj-txtx-alt3 {
+  top: 50%;
+  opacity: 1;
+}
+
+/* Title text style */
+.proj-txtx-alt3 h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+
+/* Subtitle text style */
+.proj-txtx-alt3 span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+
+/* Text for explanation under the project box */
+.proj-explanation-alt3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-style: italic;
+}
+
 .proj-explanation {
   background-color: transparent;
   border-radius: 0;
